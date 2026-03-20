@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Box, Cpu, Zap, Settings, Scissors, HardHat, Plus } from 'lucide-react';
 
 const sectors = [
-  { name: "Packaging", id: "01", icon: Box, img: "https://www.mindquad.com/wp-content/uploads/2021/02/Packaging-Industry.jpg", tech: "High-Speed Rotary" },
-  { name: "Precision CNC", id: "02", icon: Cpu, img: "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=compress&w=800", tech: "5-Axis Sync" },
-  { name: "Processing", id: "03", icon: Zap, img: "https://www.cad-schroer.com/wp-content/uploads/2024/08/Verfahrenstechnik.jpg", tech: "Aseptic Flow" },
-  { name: "Textiles Machines", id: "04", icon: Scissors, img: "https://vietextile.com/wp-content/uploads/2025/02/cau-tao-may-det-khi-avt-1024x629.jpg", tech: "Air-Jet Weaving" },
-  { name: "Laser Tech", id: "05", icon: Settings, img: "https://image.made-in-china.com/202f0j00mVhqAOzMfUrG/Qbh-Welding-Optical-Fiber-D80-High-Power-Optical-Fiber.webp", tech: "Fiber-Optic Source" },
+  { name: "Electronics and computers", id: "01", icon: Settings, img: "https://thediplomat.com/wp-content/uploads/2023/03/sizes/td-story-s-2/thediplomat_2023-03-24-150332.jpg", tech: "Tech gadgets" },
+  { name: "Packaging", id: "02", icon: Box, img: "https://www.mindquad.com/wp-content/uploads/2021/02/Packaging-Industry.jpg", tech: "High-Speed Rotary" },
+  { name: "Precision CNC", id: "03", icon: Cpu, img: "https://www.millscnc.co.uk/wp-content/uploads/2022/04/DNM-at-Arrowsmith-scaled-2-875x625.jpg", tech: "5-Axis Sync" },
+  { name: "Processing", id: "04", icon: Zap, img: "https://www.cad-schroer.com/wp-content/uploads/2024/08/Verfahrenstechnik.jpg", tech: "Aseptic Flow" },
+  { name: "Textiles Machines", id: "05", icon: Scissors, img: "https://vietextile.com/wp-content/uploads/2025/02/cau-tao-may-det-khi-avt-1024x629.jpg", tech: "Air-Jet Weaving" },
   { name: "Construction", id: "06", icon: HardHat, img: "https://cdn.i-scmp.com/sites/default/files/d8/images/canvas/2025/07/10/b2a9cbf4-d216-469f-baba-44f7b7792c5a_f7578b38.jpg", tech: "Machines" },
 ];
 

@@ -49,13 +49,13 @@ export default function AboutHero() {
                 <h3 className="text-gray-900 text-[10px] font-black uppercase tracking-[0.2em] mb-8">Our Presence</h3>
                 <div className="space-y-6">
                    <div>
-                      <div className="text-gray-900 font-bold text-sm mb-1">Shanghai HQ</div>
+                      <div className="text-gray-900 font-bold text-sm mb-1">Coimbatore, India</div>
                       <div className="text-gray-400 text-xs leading-relaxed">Central coordination & legal compliance hub.</div>
                    </div>
                    <div className="w-full h-px bg-gray-50" />
                    <div>
                       <div className="text-gray-900 font-bold text-sm mb-1">Regional Teams</div>
-                      <div className="text-gray-400 text-xs leading-relaxed">On-ground field agents in Zhejiang, Jiangsu, & Guangdong.</div>
+                      <div className="text-gray-400 text-xs leading-relaxed">On-ground field agents in Shanghai, Yiwu, Guangzhou, Shenzhen, Foshan & Dezhou.</div>
                    </div>
                 </div>
                 <button className="mt-10 w-full py-4 bg-gray-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-[#1f6f63] transition-colors">

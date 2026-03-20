@@ -59,13 +59,13 @@ export default function TechnicalIntake() {
                </p>
             </div>
 
-            <div className="flex items-center gap-6 px-10 py-6 border-l-2 border-emerald-500 bg-emerald-50/30">
+            {/* <div className="flex items-center gap-6 px-10 py-6 border-l-2 border-emerald-500 bg-emerald-50/30">
                <Cpu size={20} className="text-emerald-700" strokeWidth={1.5} />
                <div>
                   <div className="text-[9px] font-black text-emerald-800 uppercase tracking-widest">Protocol Version</div>
                   <div className="text-xs font-black text-gray-900">MV-SEC-ALPHA-2.0</div>
                </div>
-            </div>
+            </div> */}
           </div>
 
           {/* --- RIGHT: High-Density Form (8 Columns) --- */}
@@ -116,7 +116,7 @@ export default function TechnicalIntake() {
                    <span className="text-[8px] font-black uppercase tracking-[0.3em]">Direct Transmission Active</span>
                 </div>
                 <button className="px-14 py-5 bg-[#064E3B] text-white rounded-full text-[10px] font-black uppercase tracking-[0.4em] shadow-2xl shadow-emerald-900/30 hover:bg-emerald-800 transition-all flex items-center gap-4 group">
-                  Initiate Sourcing Protocol
+                  Initiate Sourcing
                   <Send size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </button>
               </div>

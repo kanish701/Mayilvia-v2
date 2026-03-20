@@ -17,9 +17,9 @@ export default function VerifiedWhatsApp() {
       
       setTimeout(() => {
         setShowPopup(false);
-      }, 4000); // 4 seconds visible
+      }, 1000); // 4 seconds visible
       
-    }, 14000); // 10s hidden + 4s visible = 14s cycle
+    }, 140000); // 10s hidden + 4s visible = 14s cycle
 
     return () => {
       clearTimeout(initialDelay);

@@ -204,7 +204,7 @@ const SourcingDashboard: React.FC = () => {
                     </p>
                     <div className="grid grid-cols-2 gap-6">
                       <MetricItem label="Inspection" value="Pre-Shipment (100%)" barWidth="w-full" />
-                      <MetricItem label="Protocol" value="ISO-9001 Elite" barWidth="w-full" />
+                      <MetricItem label="Protocol" value="High-Quality Elite" barWidth="w-full" />
                     </div>
                   </div>
                 </section>

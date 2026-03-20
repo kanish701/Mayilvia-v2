@@ -1,6 +1,11 @@
-import { ArrowUpRight, Play, Star, ShieldCheck, Globe } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowUpRight, Play, Star, ShieldCheck, Globe, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import inspectionVideo from '../../../assets/video/Drilling-gun.mp4';
 
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="relative min-h-screen w-full bg-white overflow-hidden">
       {/* Dynamic Background - Clean & High Key */}
@@ -36,12 +41,20 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap gap-8 items-center">
-              <button className="group bg-[#1f6f63] hover:bg-[#c9a24a] text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all flex items-center gap-3 shadow-lg shadow-[#1f6f63]/20">
+              <a 
+                href="https://wa.me/919087621000?text=Hi!%20I'm%20interested%20in%20your%20sourcing%20services."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-[#1f6f63] hover:bg-[#c9a24a] text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all flex items-center gap-3 shadow-lg shadow-[#1f6f63]/10"
+              >
                 Start Sourcing
                 <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-              </button>
+              </a>
               
-              <button className="flex items-center gap-3 group">
+              <button 
+                onClick={() => setIsModalOpen(true)}
+                className="flex items-center gap-3 group"
+              >
                 <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-[#1f6f63] group-hover:bg-[#1f6f63]/5 transition-all">
                   <Play size={16} className="text-[#1f6f63] fill-current" />
                 </div>
@@ -100,6 +113,44 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      <AnimatePresence>
+        {isModalOpen && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsModalOpen(false)}
+              className="absolute inset-0 bg-black/90 backdrop-blur-sm"
+            />
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="relative w-full max-w-5xl aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl"
+            >
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="absolute top-4 right-4 z-10 p-2 bg-white/10 hover:bg-white/20 text-white rounded-full transition-colors"
+              >
+                <X size={20} />
+              </button>
+
+              <video
+                src={inspectionVideo}
+                className="w-full h-full object-contain"
+                controls
+                autoPlay
+              >
+                Your browser does not support the video tag.
+              </video>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

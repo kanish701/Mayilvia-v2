@@ -55,11 +55,11 @@ export default function Footer() {
               <ul className="space-y-6">
                 <li className="flex flex-col gap-1">
                   <span className="text-[9px] text-gray-300 font-bold uppercase tracking-widest">Inquiries</span>
-                  <a href="mailto:info@mayilvia.com" className="text-gray-900 text-[11px] font-bold hover:text-[#1f6f63] transition-colors">info@mayilvia.com</a>
+                  <a href="mailto:mayilviaglobal@gmail.com" className="text-gray-900 text-[11px] font-bold hover:text-[#1f6f63] transition-colors">mayilviaglobal@gmail.com</a>
                 </li>
                 <li className="flex flex-col gap-1">
                   <span className="text-[9px] text-gray-300 font-bold uppercase tracking-widest">Support</span>
-                  <a href="tel:+910000000000" className="text-gray-900 text-[11px] font-bold hover:text-[#1f6f63] transition-colors">+91 00000-00000</a>
+                  <a href="tel:+919087621000" className="text-gray-900 text-[11px] font-bold hover:text-[#1f6f63] transition-colors">+91 9087621000</a>
                 </li>
               </ul>
             </div>
@@ -67,8 +67,7 @@ export default function Footer() {
             <div className="col-span-2 md:col-span-1">
               <h4 className="text-gray-900 text-[10px] font-black tracking-[0.3em] uppercase mb-8">Headquarters</h4>
               <p className="text-gray-400 text-[11px] font-medium leading-relaxed uppercase tracking-wider">
-                Pudong District, Shanghai<br />
-                & Coimbatore, India
+                Coimbatore, India
               </p>
             </div>
           </div>
